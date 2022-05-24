@@ -31,7 +31,7 @@
     <img src="Figures/density3D_zy_t150_dz1.5_zoom_crop.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">The outflow from the self-crossing region for different values of SMBH's spin</h3>
 
   <p align="center">
     Inject particle in a self-crossing region like never before!
