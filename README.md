@@ -68,9 +68,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-  *** <li><a href="#roadmap">Roadmap</a></li>
+   <!-- <li><a href="#roadmap">Roadmap</a></li> -->
     <li><a href="#contributing">Contributing</a></li>
- ***   <li><a href="#license">License</a></li>
+  <!--   <li><a href="#license">License</a></li> -->
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -83,7 +83,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+PROGRAM NAME is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
@@ -102,14 +102,9 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [healpy](https://healpy.readthedocs.io/en/latest/)
+* [HEALPix](https://healpix.jpl.nasa.gov/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
