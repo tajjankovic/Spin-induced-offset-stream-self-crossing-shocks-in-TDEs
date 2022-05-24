@@ -117,7 +117,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Python 3
   ```sh
   npm install npm@latest -g
   ```
@@ -131,14 +131,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+3. Install Pyhton packages
    ```sh
-   npm install
+   pip install pandas
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -149,7 +146,25 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Running the program:
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+3. Install Pyhton packages
+   ```sh
+   pip install pandas
+   ```
+
+
+Adjusting program parameters:
+
+* Pyt
+* 
+
+   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
