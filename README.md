@@ -148,15 +148,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 Running the program:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+* From the command line:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   python 3 outflow_final.py dz ...
    ```
-3. Install Pyhton packages
-   ```sh
-   pip install pandas
-   ```
+* 
+
+Viewing the output:
+* Plots:
+* Data: 
 
 
 Adjusting program parameters:
