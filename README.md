@@ -43,7 +43,7 @@
 
     <a href="https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region/issues">Report Bug</a>
     ·
-    <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region)/issues">Request Feature</a>
+    <a href="https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region/issues">Request Feature</a>
   </p>
 </div>
 
