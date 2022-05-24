@@ -1,12 +1,8 @@
-#  Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region
+#  Effect of SMBH's spin on the outflow from the self-crossing region
 
 <div id="top"></div>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
+*** README template is from: https://github.com/othneildrew/Best-README-Template
 -->
 
 
@@ -32,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Figures/density3D_zy_t150_dz1.5_zoom_crop.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
