@@ -39,8 +39,7 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-   <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    -->
+   <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a> -->
 
     <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region)/issues">Report Bug</a>
     ·
