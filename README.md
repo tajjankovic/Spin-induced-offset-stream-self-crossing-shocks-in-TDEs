@@ -1,4 +1,4 @@
-#  Effect of SMBH's spin on the outflow from the self-crossing region
+#  PROGRAM NAME
 
 <div id="top"></div>
 <!--
@@ -34,7 +34,7 @@
   <h3 align="center">The outflow from the self-crossing region for different values of SMBH's spin</h3>
 
   <p align="center">
-    Inject particle in a self-crossing region like never before!
+    Inject particles in a self-crossing region like never before!
     <br />
      <!-- <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>  -->
     <br />
