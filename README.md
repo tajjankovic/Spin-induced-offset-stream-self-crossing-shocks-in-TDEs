@@ -124,30 +124,34 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 This is an example of how to list things you need to use the software and how to install them.
 * Python 3
-  ```sh
-  npm install npm@latest -g
-  ```
+
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/tajjankovic/OUTCRON.git
    ```
-3. Install Pyhton packages
+2. Install Python packages
    ```sh
    pip install pandas
    ```
-
-        ◦ INSTRUCTIONS FOR INSTALLATION:
-            ▪ Tried on MacOS:
-                • pip3 install matplotlib, pandas, healpy, 
-                • brew install geos (for Basemap plots)
-                • pip3 install pygeos
-                • pip3 install basemap (maybe not necessary)
+        ◦ Instructions for installation of MacOS:
+           ```sh
+   pip3 install matplotlib, pandas, healpy
+   ```
+                    ```sh
+   brew install geos (for Basemap plots)
+   ```       
+              ```sh
+   pip3 install pygeos
+   ```
+              ```sh
+   pip3 install basemap (maybe not necessary)
+   ```
+                
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
