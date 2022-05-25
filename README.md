@@ -83,6 +83,8 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+In recent years, there have been several studies related to numerical simulations of TDEs \citep{hayasaki, Law_Smith_2019, liptai2019disc, bonnerot, Clerici_Gomboc_2020, Bonnerot_2020, Bonnerot_2021}. However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the SMBH $M_\mathrm{bh}\sim 10^6\, $\msun), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements \citep{bonnerot2021nozzle}. Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in \citep{Bonnerot_2020, Bonnerot_2021}. The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
+
 PROGRAM NAME is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
 
 User should follow this simple steps:
