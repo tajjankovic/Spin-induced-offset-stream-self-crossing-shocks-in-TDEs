@@ -140,15 +140,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    pip3 install matplotlib, pandas, healpy
 
-   brew install geos (for Basemap plots)
-   ```
-          
-   ```sh
+   brew install geos #for Basemap plots
+
    pip3 install pygeos
-   ```
-   
-   ```sh
-   pip3 install basemap (maybe not necessary)
+
+   pip3 install basemap #maybe not necessary
    ```
 * Instructions for installation on Ubuntu 20.04:
 * Instructions for installation on Windows 10:
