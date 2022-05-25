@@ -135,10 +135,8 @@ _Below is an example of how you can instruct your audience on installing and set
    git clone https://github.com/tajjankovic/OUTCRON.git
    ```
 2. Install Python packages
-   ```sh
-   pip install pandas
-   ```
-        ◦ Instructions for installation of MacOS:
+   
+* Instructions for installation on macOS Monterey 12:
            ```sh
    pip3 install matplotlib, pandas, healpy
    ```
@@ -151,6 +149,9 @@ _Below is an example of how you can instruct your audience on installing and set
               ```sh
    pip3 install basemap (maybe not necessary)
    ```
+* Instructions for installation on Ubuntu 20.04:
+* Instructions for installation on Windows 10:
+
                 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
