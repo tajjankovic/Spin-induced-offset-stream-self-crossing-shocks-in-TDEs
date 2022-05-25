@@ -83,7 +83,7 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)  -->
 
-In recent years, there have been several studies related to numerical simulations of TDEs \citep{hayasaki, Law_Smith_2019, liptai2019disc, bonnerot, Clerici_Gomboc_2020, Bonnerot_2020, Bonnerot_2021}. However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the supermassive black hole $M_\mathrm{bh}\sim 10^6 M_\odot$), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements \citep{bonnerot2021nozzle}. Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in \citep{Bonnerot_2020, Bonnerot_2021}. The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
+In recent years, there have been several studies related to numerical simulations of TDEs [[1]](#1) \citep{hayasaki, Law_Smith_2019, liptai2019disc, bonnerot, Clerici_Gomboc_2020, Bonnerot_2020, Bonnerot_2021}. However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the supermassive black hole $M_\mathrm{bh}\sim 10^6 M_\odot$), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements \citep{bonnerot2021nozzle}. Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in \citep{Bonnerot_2020, Bonnerot_2021}. The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
 
 
 OUTCRON is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
@@ -254,12 +254,17 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## References
+<a id="1">[1]</a> 
+Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+
+
+<!-- Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
