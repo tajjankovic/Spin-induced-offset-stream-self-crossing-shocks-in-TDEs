@@ -44,7 +44,7 @@
 [Report bug or request feature](https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region/issues).
 
     ·
- <!--   <a href="https://github.com/tajjankovic/Effect-of-SMBH-s-spin-on-the-outflow-from-the-self-crossing-region/issues">Request Feature</a>  -->
+ <!--   <a href="issues">Request Feature</a>  -->
   </p>
 </div>
 
