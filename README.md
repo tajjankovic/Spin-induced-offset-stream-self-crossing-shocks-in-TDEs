@@ -178,7 +178,7 @@ Running the program:
 
 * From the command line:
    ```sh
-   python 3 outflow_final.py dz ...
+   python3.8 outflow_final.py --dz_list 0.6 1.2
    ```
 * 
 
