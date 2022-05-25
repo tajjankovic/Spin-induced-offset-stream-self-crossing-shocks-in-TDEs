@@ -85,6 +85,10 @@
 
 In recent years, there have been several studies related to numerical simulations of TDEs \citep{hayasaki, Law_Smith_2019, liptai2019disc, bonnerot, Clerici_Gomboc_2020, Bonnerot_2020, Bonnerot_2021}. However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the SMBH $M_\mathrm{bh}\sim 10^6\, $\msun), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements \citep{bonnerot2021nozzle}. Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in \citep{Bonnerot_2020, Bonnerot_2021}. The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
 
+
+PROGRAM NAME is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
+
+
 PROGRAM NAME is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
 
 User should follow this simple steps:
@@ -138,14 +142,36 @@ _Below is an example of how you can instruct your audience on installing and set
    pip install pandas
    ```
 
-
+        ◦ INSTRUCTIONS FOR INSTALLATION:
+            ▪ Tried on MacOS:
+                • pip3 install matplotlib, pandas, healpy, 
+                • brew install geos (for Basemap plots)
+                • pip3 install pygeos
+                • pip3 install basemap (maybe not necessary)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
+        ◦ Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
+            ▪ introduce f= dotM/dotM_tot and evaluate for every pixel
+        ◦ Evaluate f for a 2D grid:
+            ▪ construct grid:
+                • linspace in phi, evenly spaced in cosine
+            ▪ for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
+            ▪ “correction factor” (integral of f over units sphere =1):
+                • theta, phi have different spacing/distro than theta, phi → multiply with delta cos* delta phi
+                • 
+            ▪ output: theta,phi,f for every point
+            ▪ What Clement thinks that it would be better???:
+                • to have: f*delta_cos_theta = 1
+                • so f = f’/pix_area (“normalized” mass flux – or how do we call it?)
+                • from: 
+                •         hpmap_out = np.take(hpxmap,pix_out)*delta_cos_theta*delta_phi/pix_area
+                • to (and then multiply the sum by correction factor *delta_cos_theta/pix_area:
+                •         hpmap_out = np.take(hpxmap,pix_out)
+                
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 Running the program:
