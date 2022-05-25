@@ -137,16 +137,17 @@ _Below is an example of how you can instruct your audience on installing and set
 2. Install Python packages
    
 * Instructions for installation on macOS Monterey 12:
-           ```sh
+   ```sh
    pip3 install matplotlib, pandas, healpy
-   ```
-                    ```sh
+
    brew install geos (for Basemap plots)
-   ```       
-              ```sh
+   ```
+          
+   ```sh
    pip3 install pygeos
    ```
-              ```sh
+   
+   ```sh
    pip3 install basemap (maybe not necessary)
    ```
 * Instructions for installation on Ubuntu 20.04:
