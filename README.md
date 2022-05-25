@@ -257,20 +257,28 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 ## References
 <a id="1">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="2">[2]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="3">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="4">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="5">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="6">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="7">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="8">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
+
 <a id="9">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 
