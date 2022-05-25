@@ -43,7 +43,7 @@
 
 [Report bug or request feature](https://github.com/tajjankovic/OUTCRON/issues).
 
-    ·
+  
  <!--   <a href="issues">Request Feature</a>  -->
   </p>
 </div>
