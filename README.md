@@ -68,8 +68,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-         <li><a href="#basic">Basic Steps</a></li>
-         <li><a href="#run">Running the program</a></li>
+         <li><a href="#basic-steps">Basic Steps</a></li>
+         <li><a href="#running-the-program">Running the program</a></li>
 
    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
   <!--   <li><a href="#contributing">Contributing</a></li> -->
