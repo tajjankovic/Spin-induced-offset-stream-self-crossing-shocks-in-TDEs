@@ -68,6 +68,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+         <li><a href="#basic">Basic Steps</a></li>
+         <li><a href="#run">Running the program</a></li>
+
    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
   <!--   <li><a href="#contributing">Contributing</a></li> -->
   <!--   <li><a href="#license">License</a></li> -->
@@ -156,6 +159,8 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+### Basic steps
+
 What does the program do:
 * Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
   * introduce f= dotM/dotM_tot and evaluate for every pixel 
@@ -167,7 +172,7 @@ What does the program do:
                 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-Running the program:
+### Running the program
 
 * From the command line:
    ```sh
