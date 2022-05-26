@@ -158,12 +158,11 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Usage
 What does the program do:
 * Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
-            ▪ introduce f= dotM/dotM_tot and evaluate for every pixel
+  * introduce f= dotM/dotM_tot and evaluate for every pixel 
 * Evaluate f for a 2D grid:
-            ▪ construct grid: linspace in phi, evenly spaced in cosine
-            ▪ for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
-
-            ▪ output: theta,phi,f for every point
+  * construct grid: linspace in phi, evenly spaced in cosine
+  * for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
+  * output: theta,phi,f for every point
      
                 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
