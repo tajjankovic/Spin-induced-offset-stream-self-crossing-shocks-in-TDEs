@@ -156,23 +156,15 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-        ◦ Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
+What does the program do:
+* Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
             ▪ introduce f= dotM/dotM_tot and evaluate for every pixel
-        ◦ Evaluate f for a 2D grid:
-            ▪ construct grid:
-                • linspace in phi, evenly spaced in cosine
+* Evaluate f for a 2D grid:
+            ▪ construct grid: linspace in phi, evenly spaced in cosine
             ▪ for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
-            ▪ “correction factor” (integral of f over units sphere =1):
-                • theta, phi have different spacing/distro than theta, phi → multiply with delta cos* delta phi
-                • 
+
             ▪ output: theta,phi,f for every point
-            ▪ What Clement thinks that it would be better???:
-                • to have: f*delta_cos_theta = 1
-                • so f = f’/pix_area (“normalized” mass flux – or how do we call it?)
-                • from: 
-                •         hpmap_out = np.take(hpxmap,pix_out)*delta_cos_theta*delta_phi/pix_area
-                • to (and then multiply the sum by correction factor *delta_cos_theta/pix_area:
-                •         hpmap_out = np.take(hpxmap,pix_out)
+     
                 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
