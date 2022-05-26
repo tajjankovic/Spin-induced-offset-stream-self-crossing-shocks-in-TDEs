@@ -62,7 +62,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-               <li><a href="#prerequisites">Built With</a></li>
+               <li><a href="#Built-with">Built With</a></li>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
@@ -159,6 +159,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
 ### Basic steps
 
 What does the program do:
