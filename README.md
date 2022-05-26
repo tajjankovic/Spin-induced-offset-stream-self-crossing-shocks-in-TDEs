@@ -1,4 +1,4 @@
-#  TDE OUTCRON
+#  TDE ASCRO
 
 <div id="top"></div>
 <!--
@@ -31,7 +31,7 @@
     <img src="Figures/density3D_zy_t150_dz1.5_zoom_crop.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Stellar tidal disruption events and the OUTflow from the self-CRossing regiON (OUTCRON) for different values of SMBH's spin</h3>
+  <h3 align="center">Stellar tidal disruption events and the Angular distribution of the Self-Crossing Region OUTflow (ASCRO) for different values of SMBH's spin</h3>
 
   <p align="center">
     Inject particles in a self-crossing region like never before!
@@ -41,7 +41,7 @@
     <br />
    <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>  -->
 
-[Report a bug or request a feature](https://github.com/tajjankovic/OUTCRON/issues).
+[Report a bug or request a feature](https://github.com/tajjankovic/ASCRO/issues).
 
   
  <!--   <a href="issues">Request Feature</a>  -->
@@ -91,10 +91,10 @@
 In recent years, there have been several studies related to numerical simulations of TDEs ([[1]](#1), [[2]](#2), [[3]](#3), [[4]](#4), [[5]](#5), [[6]](#6)). However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the supermassive black hole $M_\mathrm{bh}\sim 10^6 M_\odot$), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements ([[7]](#7)). Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in ([[8]](#8), [[9]](#9)). The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
 
 
-OUTCRON is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
+ASCRO is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
 
 
-OUTCRON is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
+ASCRO is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
 
 User should follow this simple steps:
 * Specify dz.
@@ -137,7 +137,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tajjankovic/OUTCRON.git
+   git clone https://github.com/tajjankovic/ASCRO.git
    ```
 2. Install Python packages
    
@@ -248,7 +248,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/tajjankovic/OUTCRON](https://github.com/tajjankovic/OUTCRON)
+Project Link: [https://github.com/tajjankovic/ASCRO](https://github.com/tajjankovic/ASCRO)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
