@@ -68,9 +68,11 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+      <ul>
          <li><a href="#basic-steps">Basic Steps</a></li>
          <li><a href="#running-the-program">Running the program</a></li>
-
+      </ul>
+    </li>
    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
   <!--   <li><a href="#contributing">Contributing</a></li> -->
   <!--   <li><a href="#license">License</a></li> -->
