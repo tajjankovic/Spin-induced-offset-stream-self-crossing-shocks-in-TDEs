@@ -31,7 +31,7 @@
     <img src="Figures/density3D_zy_t150_dz1.5_zoom_crop.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Stellar tidal disruption events and the Angular distribution of the Self-Crossing Region OUTflow (ASCRO) for different values of SMBH's spin</h3>
+  <h3 align="center">Stellar tidal disruption events and the Angular distribution of the Self-Crossing Region Outflow (ASCRO) for different values of SMBH's spin</h3>
 
   <p align="center">
     Inject particles in a self-crossing region like never before!
