@@ -27,8 +27,8 @@ CLI.add_argument(
   "--dz_list",  # name on the CLI - drop the `--` for positional/required parameters
   nargs="*",  # 0 or more values expected => creates a list
   type=float,
-  #default=np.arange(0.8,1.5,0.01),  # default if nothing is provided
-  default=[0.8,1.2,1.5],  # default if nothing is provided
+  #default=np.arange(0.,2.01,0.01),  # default if nothing is provided
+  default=[0.6],  # default if nothing is provided
 #    default=[0.9, 1.0, 1.2, 1.5, 1.8],  # default if nothing is provided
 )
 
@@ -43,10 +43,10 @@ print("dz_list: %r" % args.dz_list)
 '''function for CDF calculation' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 def cdf_bivariate(hpmap):
-    hpmap_out_2d = hpmap.reshape(xsize, ysize)
+    hpmap_out_2d = hpmap.reshape(ysize, xsize)
 
     "empty 2d array for theta, empty 1d array for phi because cdfphi doesn't depend on theta (cdfs of rows are the same)"
-    cdf_theta_out_2d = np.empty([xsize,ysize])
+    cdf_theta_out_2d = np.empty([ysize,xsize])
     cdf_phi_1d = np.empty([xsize])
 
     for j in range(0, xsize):
@@ -57,7 +57,7 @@ def cdf_bivariate(hpmap):
         for k in range(0, ysize):
             cdf_theta_out_2d[k,j] = np.trapz(y=hpmap_out_2d[:k,j]*np.sin(theta_array[:k, j]),x=theta_array[:k, j])/np.trapz(y=hpmap_out_2d[:,j]*np.sin(theta_array[:, j]),x=theta_array[:,j])
 
-    cdf_phi_out_2d = np.tile(cdf_phi_1d,(ysize,1))#copy the same array N-times
+    cdf_phi_out_2d = np.tile(cdf_phi_1d,(xsize,1))#copy the same array N-times
 
     'normalize to 1'
     cdf_theta_out_2d  = cdf_theta_out_2d / np.max(cdf_theta_out_2d)
@@ -74,10 +74,11 @@ def cdf_bivariate(hpmap):
 '''function to calculate data (by lin. interpolation) for values of dz not in the simulated range' '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 def interpolate_data(dz):
-    dz_sim = np.arange(0,1.51,0.1)
+    dz_sim = np.arange(0,2.01,0.1)
     dz_sim = np.delete(dz_sim,7) #remove for dz=0.7 (not simulated)
     #dz_sim = np.array([0., 0.1 ,0.2, 0.3, 0.4,0.5,0.6,0.8,0.9,1.0,1.2])
 
+    'find two closest values of dz of simulated data'
     idx = (np.abs(dz_sim - float(dz))).argmin()
     if float(dz)<=dz_sim[idx]:
         dz1, dz2 = dz_sim[idx-1], dz_sim[idx]
@@ -119,18 +120,15 @@ def calculate(dz_list, theta_out,phi_out):
         theta_hp, phi_hp, hpxmap = data_all[:,0], data_all[:,1], data_all[:,2]
 
         'smoothing parameters limits for "same_limits" option'
-        if float(dz)<0.7:
-            #plot_min, plot_max = 1e-10, 0.3#old limits - for j=rho*v=dotM/area_pix
-            if nside==32:
-                plot_min_hp_map, plot_max_hp_map = 1e-10, 2e-4
-            elif nside==64:
-                plot_min_hp_map, plot_max_hp_map = 1e-10, 4e-5
-            plot_min_contourf, plot_max_contourf = 1e-10*pix_area/(2*dotM), 0.3*pix_area/(2*dotM)
+        if float(dz)<2.7:
+            plot_min_hp_map, plot_max_hp_map = 1e-10, 4e-5
+            plot_min_contourf, plot_max_contourf = 1e-10/pix_area, 4e-5/pix_area
 
             lmax_smooth = 15
         else:
+
             plot_min_hp_map, plot_max_hp_map = 1e-10, 8e-4
-            plot_min, plot_max = 1e-10*pix_area/(2*dotM), 5*pix_area/(2*dotM)
+            plot_min_contourf, plot_max_contourf = 1e-10/pix_area,  8e-4/pix_area
             lmax_smooth = 40
 
         'smooth map if necessary'
@@ -146,19 +144,20 @@ def calculate(dz_list, theta_out,phi_out):
         print('Integrated value of f from the 2D grid on a unit sphere is:', np.sum(hpmap_out)*delta_cos_theta*delta_phi)
 
         'calculate cumulative distribution function CDF for theta and conditional prob. for phi'
-        cdf_theta_out, cdf_phi_out = cdf_bivariate(hpmap_out)
+        #cdf_theta_out, cdf_phi_out = cdf_bivariate(hpmap_out)
 
-        'save output in a 2D array (theta, phi, f)'
-        name_save_data = path_data_out + "dz{0}_nside={1}_size={2}".format(dz, nside, xsize)
+        'save output f in a 1D array'
+        name_save_data = path_data_out + "dz{0}_nside={1}_xsize={2}_ysize={3}".format(dz, nside, xsize,ysize)
         datafile_path = name_save_data + '.txt'
-        np.savetxt(datafile_path, np.column_stack([theta_out, phi_out, hpmap_out,cdf_theta_out.ravel(),cdf_phi_out.ravel()]),header="columns: theta,phi,f,cdf (theta),cdf (phi)",fmt=('%.12f', '%12f', '%.12f', '%.12f', '%.12f'))
+        #np.savetxt(datafile_path, np.column_stack([theta_out, phi_out, hpmap_out,cdf_theta_out.ravel(),cdf_phi_out.ravel()]),header="columns: theta,phi,f,cdf (theta),cdf (phi)",fmt=('%.12f', '%12f', '%.12f', '%.12f', '%.12f'))
+        np.savetxt(datafile_path, np.column_stack([hpmap_out]),header="columns: f",fmt='%.12f')
 
 
         'plotting functions'
         if plot_hp_map_bool:
             plot_data.plot_healpix_map(hpxmap, dz, plot_min_hp_map, plot_max_hp_map,lmax_smooth)
         if plot_contourf_bool:
-            plot_data.plot_contourf(dz, hpmap_out.reshape(xsize,ysize),phi_out.reshape(xsize,ysize),theta_out.reshape(xsize,ysize),lmax_smooth)
+            plot_data.plot_contourf(dz, hpmap_out.reshape(ysize,xsize),phi_out.reshape(ysize,xsize),theta_out.reshape(ysize,xsize),plot_min_contourf, plot_max_contourf,lmax_smooth)
 
 
 

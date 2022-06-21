@@ -36,10 +36,10 @@ dotM = 1.
 save = True
 show = True
 same_limits = True
-smooth = True
+smooth = False
 make_symmetric = True
-plot_hp_map_bool = True
-plot_contourf_bool= False
+plot_hp_map_bool = False
+plot_contourf_bool= True
 orthographic = False
 rot_lat, rot_lon = 40, 40 #if orthographic, rotate the map
 
@@ -63,7 +63,7 @@ fwhm = 3 * R  # one generally recommends FWHM >~ 3R to obtain a smooth enough re
 size = 300
 Ncdf = 1e5
 
-xsize, ysize = size, size #better to use xsize = ysize
+xsize, ysize = 20, 30 #better to use xsize = ysize
 print('Output 2D array with xsize=', xsize, 'and ysize=', ysize)
 
 'get grid points'

@@ -20,7 +20,7 @@ from mpl_toolkits.basemap import Basemap
 '''scientific notation for colorbar:https://stackoverflow.com/questions/25983218/scientific-notation-colorbar-in-matplotlib'''
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 def fmt(x,pos):
-    a, b = '{:.0e}'.format(x).split('e')
+    a, b = '{:.1e}'.format(x).split('e')
     b = int(b)
     return r'${} \times 10^{{{}}}$'.format(a, b)
 
@@ -73,31 +73,33 @@ def plot_healpix_map(hpxmap,dz,plot_min,plot_max,lmax_smooth):
             hp.projtext(meridians[kl], -2, str(abs(int(180 - meridians[kl]))) + r'$^\circ$E', lonlat=True, fontsize=20,color='white')
         else:
             hp.projtext(meridians[kl], -2, str(abs(180 - int(meridians[kl]))) + r'$^\circ$', lonlat=True, fontsize=20,color='white')
-    for kl in range(1, len(parallels)):
-        if parallels[kl] < 0:
-            hp.projtext(0, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$N', lonlat=True, fontsize=20,color='black')
-            hp.projtext(0, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$N', lonlat=True, fontsize=20,color='black')
-        elif parallels[kl] > 0:
-            hp.projtext(360, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$S', lonlat=True, fontsize=20, color='black')
-            hp.projtext(360, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$S', lonlat=True, fontsize=20, color='black')
-        else:
-            hp.projtext(0, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$', lonlat=True, fontsize=20,color='black')
-            hp.projtext(0, parallels[kl], str(abs(int(parallels[kl]))) + r'$^\circ$', lonlat=True, fontsize=20,color='black')
 
-    plt.title('HP map of data, ' + r'$\Delta z=$' + dz, fontsize='24')
+    plt.text(0.765, 0.52, '0' + r'$^\circ$', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.74, 0.377, '30' + r'$^\circ$S', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.655, 0.26, '60' + r'$^\circ$S', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.74, 0.644, '30' + r'$^\circ$N', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.655, 0.76, '60' + r'$^\circ$N', fontsize=20, transform=plt.gcf().transFigure)
+
+    plt.text(0.084, 0.52, '0' + r'$^\circ$', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.08, 0.377, '30' + r'$^\circ$S', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.165, 0.26, '60' + r'$^\circ$S', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.08, 0.644, '30' + r'$^\circ$N', fontsize=20, transform=plt.gcf().transFigure)
+    plt.text(0.165, 0.76, '60' + r'$^\circ$N', fontsize=20, transform=plt.gcf().transFigure)
+
+    plt.title('HP map of data, ' + r'$\Delta z=$' + "{:.2f}".format(float(dz)), fontsize='24')
 
     'add new axes for colorbar and adjust as you wish'
     position = fig.add_axes([0.11, 0.1, 0.64,0.05])  ## the parameters are the specified position you set because cbar is not exactly in the center  [left, bottom, width, height]
-    cbar = fig.colorbar(image, cax=position, extend="both", orientation='horizontal')
+    cbar = fig.colorbar(image, cax=position, extend="both", orientation='horizontal',format=tck.FuncFormatter(fmt))
 
     cbar.set_label(r"$\dot{M}/\dot{M}_\mathrm{tot}\,$", rotation=0, fontsize=20)
 
     'set colorbar ticks'
     cbar.ax.tick_params(labelsize=18)
     cbar.ax.locator_params(nbins=5)
-    cbar.formatter.set_powerlimits((0, 0))
+    #cbar.formatter.set_powerlimits((0, 0))
 
-    name_save = 'normalized_healpix_map_dz='+str(round(float(dz),2))
+    name_save = 'normalized_healpix_map_dz='+"{:.2f}".format(float(dz))
 
     name_save +='_nside='+str(int(nside))
     name_save = fig_name(name_save,lmax_smooth)
@@ -112,17 +114,11 @@ def plot_healpix_map(hpxmap,dz,plot_min,plot_max,lmax_smooth):
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 '''Plot a spherical (Mollweide) contour projection with Matplotlib'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-def plot_contourf(dz,Zfit,x_list,y_list,lmax_smooth):
+def plot_contourf(dz,Zfit,x_list,y_list,plot_min, plot_max,lmax_smooth):
 
     """ticks locator"""
-    locator_f = MaxNLocator()
-
-    if same_limits:
-        if float(dz)<0.7:
-            plot_min, plot_max = 1e-4, 0.3 * pix_area / (2 * dotM)
-        else:
-            plot_min, plot_max = 0., 5 * pix_area / (2 * dotM)
-        bounds = np.linspace(plot_min, plot_max, 201)
+    locator_f = MaxNLocator(nbins=5)
+    bounds = np.linspace(plot_min, plot_max, 201)
 
 
     RAD = 180 / np.pi
@@ -152,6 +148,10 @@ def plot_contourf(dz,Zfit,x_list,y_list,lmax_smooth):
     meridians = np.arange(-180., 181., 45.)
     # set minor ticks
     cbar.ax.tick_params(labelsize=20)
+    cbar.locator = locator_f
+    cbar.update_ticks()
+
+
     ax.drawparallels(np.arange(-90., 91., 30.), labels=[1, 1, 0, 0], fontsize=20)
     ax.drawmeridians(meridians, labels=[0, 0, 0, 1], fontsize=20)
     'meridians label have to added manually (automatic positioning not supported at the current time)'
@@ -164,12 +164,12 @@ def plot_contourf(dz,Zfit,x_list,y_list,lmax_smooth):
             plt.annotate(str(int(meridians[k])) + r'$^\circ$', xy=ax(meridians[k], 2), xycoords='data', fontsize=18,color='white')
 
     else:
-        plt.title('Data from 2D array, ' + r'$\Delta z=$'+ dz , fontsize='24')
+        plt.title('Data from 2D array, ' + r'$\Delta z=$'+  "{:.2f}".format(float(dz)) , fontsize='24')
         cbar.set_label(r'${f}\,$', rotation=0, fontsize=20)
 
     'options for saving the figure'
-    name_save = 'normalized_map_dz='+dz
-    name_save +='_nside='+str(int(nside))
+    name_save = 'normalized_map_dz='+"{:.2f}".format(float(dz))
+    name_save +='_nside='+str(int(nside)) +'_xsize='+str(int(xsize))+'_ysize='+str(int(ysize))
     name_save = fig_name(name_save,lmax_smooth)
 
     if save:
