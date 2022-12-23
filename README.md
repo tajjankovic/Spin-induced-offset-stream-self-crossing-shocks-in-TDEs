@@ -31,7 +31,7 @@
     <img src="Figures/density3D_zy_t150_dz1.5_zoom_crop.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Stellar tidal disruption events and the angular DIstribution of the Self-Crossing Region Outflow (DISCRO) for different values of SMBH's spin</h3>
+  <h3 align="center">Spin-induced offset stream self-crossing shocks in tidal disruption events</h3>
 
   <p align="center">
     Inject particles in a self-crossing region like never before!
@@ -94,7 +94,7 @@ In recent years, there have been several studies related to numerical simulation
 DISCRO is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
 
 
-DISCRO is a program, which enables user to inject particles from a self-crossing region in stellar tidal disruption events. 
+This code outputs the mass flux along the given direction by specifying dz, $\theta$ and $\phi$. 
 
 User should follow this simple steps:
 * Specify dz.
