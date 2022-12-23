@@ -171,7 +171,7 @@ What does the program do:
 
 ### Running the program
 
-* E.g. from the command line for $\Delza=0.6$ and 1.2:
+* E.g. from the command line for $\Delta=0.6$ and 1.2:
    ```sh
    python3.8 outflow_final.py --dz_list 0.6 1.2
    ```
