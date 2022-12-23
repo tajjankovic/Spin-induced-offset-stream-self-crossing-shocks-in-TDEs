@@ -119,7 +119,6 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * Python 3
 * [healpy](https://healpy.readthedocs.io/en/latest/)
 * [HEALPix](https://healpix.jpl.nasa.gov/)
@@ -158,12 +157,12 @@ This is an example of how to list things you need to use the software and how to
 ### Basic steps
 
 What does the program do:
-* By default it constructs a Healpix map of $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$ 
-* outflow_parameters.py
+* By default it calculates $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$, saves the values to a .txt file and plots a Healpix map of $F$
+* Script outflow_parameters.py:
   * Script with paths (for output and input directories) and relevant parameters (for plotting and calculations)
-* outflow.py
+* Script outflow.py:
   * Script for running the code and calculating the normalized mass flux
-* outflow_plot.py
+* Script outflow_plot.py:
   * Script for plotting the data: either a HEALPix map or a Matplotlib contour plot
 * User can specify arbitrary values of $\theta$ and $\phi$:
   * Change parameters theta_array_1d and phi_array_1d in the outflow_parameters.py file
