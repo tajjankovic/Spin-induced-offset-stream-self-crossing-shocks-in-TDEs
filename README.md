@@ -99,7 +99,7 @@ induces an offset between these two colliding components that can affect the out
 of the black hole’s spin by locally simulating collisions between two streams, which are offset in the direction perpendicular
 to their orbital plane. 
 
-We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated spherical projections of the normalized mass flux distributions in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. 
+We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. 
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -109,12 +109,11 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 
 
 
-### Built With
+<!-- ### Built With -->
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<!-- This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. -->
 
-* [healpy](https://healpy.readthedocs.io/en/latest/)
-* [HEALPix](https://healpix.jpl.nasa.gov/)
+
 
 
 
@@ -122,7 +121,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 This is an example of how to list things you need to use the software and how to install them.
 * Python 3
-
+* [healpy](https://healpy.readthedocs.io/en/latest/)
+* [HEALPix](https://healpix.jpl.nasa.gov/)
 
 ### Installation
 
@@ -158,15 +158,12 @@ This is an example of how to list things you need to use the software and how to
 ### Basic steps
 
 What does the program do:
-* Construct a Healpix map of f’ and coordinates phi’, theta’ of pixel centers (integral of f’ over unit sphere = 1)
-  * introduce f= dotM/dotM_tot and evaluate for every pixel 
-* Evaluate f for a 2D grid:
+* By default it constructs a Healpix map of $F$ for $\theta \in [0,pi]$ and $\phi \in [0,2\pi]$ 
+* User :
   * construct grid: linspace in phi, evenly spaced in cosine
   * for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
   * output: theta,phi,f for every point
      
-                
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 ### Running the program
 
@@ -174,17 +171,11 @@ Use this space to show useful examples of how a project can be used. Additional 
    ```sh
    python3.8 outflow_final.py --dz_list 0.6 1.2
    ```
-* 
-
-Viewing the output:
-* Plots:
-* Data: 
+* Viewing the output:
+  * Plots:
+  * Data: 
 
 
-Adjusting program parameters:
-
-* Pyt
-* 
 
    
 
@@ -192,7 +183,7 @@ Adjusting program parameters:
 
 
 
-<!-- ROADMAP
+<!-- ROADMAP-->
 ## Roadmap
 
 - [x] Add Changelog
@@ -203,7 +194,7 @@ Adjusting program parameters:
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+<!-- See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>  -->
 
