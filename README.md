@@ -28,8 +28,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="Figures/dz0.0_rho_phys_no_colorbar.png" alt="Logo" width="160" height="160">
-       <img src="Figures/dz1.2_rho_phys_no_colorbar.png" alt="Logo" width="160" height="160">
+    <img src="Figures/dz0.0_rho_phys_no_colorbar.png" alt="Logo" width="320" height="320">
+       <img src="Figures/dz1.2_rho_phys_no_colorbar.png" alt="Logo" width="320" height="320">
 
   </a>
 
