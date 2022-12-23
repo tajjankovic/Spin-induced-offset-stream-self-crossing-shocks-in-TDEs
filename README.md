@@ -159,21 +159,23 @@ This is an example of how to list things you need to use the software and how to
 
 What does the program do:
 * By default it constructs a Healpix map of $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$ 
-* User can specify arbitrary values of :
-  * construct grid: linspace in phi, evenly spaced in cosine
-  * for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
-  * output: theta,phi,f for every point
+* outflow_parameters.py
+  * Script with paths (for output and input directories) and relevant parameters (for plotting and calculations)
+* outflow.py
+  * Script for running the code and calculating the normalized mass flux
+* outflow_plot.py
+  * Script for plotting the data: either a HEALPix map or a Matplotlib contour plot
+* User can specify arbitrary values of $\theta$ and $\phi$:
+  * Change parameters theta_array_1d and phi_array_1d in the outflow_parameters.py file
      
 
 ### Running the program
 
-* From the command line:
+* E.g. from the command line for $\Delza=0.6$ and 1.2:
    ```sh
    python3.8 outflow_final.py --dz_list 0.6 1.2
    ```
-* Viewing the output:
-  * Plots:
-  * Data: 
+
 
 
 
