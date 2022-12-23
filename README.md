@@ -267,7 +267,6 @@ Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet) -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
