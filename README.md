@@ -1,4 +1,4 @@
-#  Outflow from the spin induced offset stream self-crossing shocks in TDEs
+#  Outflow from the spin-induced offset stream self-crossing shocks in TDEs
 
 <div id="top"></div>
 <!--
@@ -99,7 +99,7 @@ induces an offset between these two colliding components that can affect the out
 of the black hole’s spin by locally simulating collisions between two streams, which are offset in the direction perpendicular
 to their orbital plane. 
 
-We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. 
+We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. More details are available in [healpy](https://arxiv.org/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
