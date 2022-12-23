@@ -158,8 +158,8 @@ This is an example of how to list things you need to use the software and how to
 ### Basic steps
 
 What does the program do:
-* By default it constructs a Healpix map of $F$ for $\theta \in [0,pi]$ and $\phi \in [0,2\pi]$ 
-* User :
+* By default it constructs a Healpix map of $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$ 
+* User can specify arbitrary values of :
   * construct grid: linspace in phi, evenly spaced in cosine
   * for every point in the grid (every pair of theta, phi) evaluate f by determining in which pixel is this pair located
   * output: theta,phi,f for every point
