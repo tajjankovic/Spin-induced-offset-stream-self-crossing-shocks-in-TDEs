@@ -29,6 +29,8 @@
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="Figures/dz0.0_rho_phys_no_colorbar.png" alt="Logo" width="80" height="80">
+       <img src="Figures/dz0.0_rho_phys_no_colorbar.png" alt="Logo" width="80" height="80">
+
   </a>
 
   <h3 align="center">Spin-induced offset stream self-crossing shocks in tidal disruption events</h3>
