@@ -184,19 +184,9 @@ What does the program do:
 
 
 <!-- ROADMAP-->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
 
 <!-- See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>  -->
 
 
 
@@ -230,7 +220,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Taj Jankovič - taj.jankovic@ung.si
 
 Project Link: [https://github.com/tajjankovic/DISCRO](https://github.com/tajjankovic/DISCRO)
 
