@@ -26,7 +26,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div align="left">
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="Figures/dz1.2_rho_phys_no_colorbar.png" alt="Logo" width="300" height="300">
        <img src="Figures/normalized_healpix_map_of_F_dz=1.20_nside=64_same_limits_lmaxsmooth=40_smooth_fwhm=0.05_symm.png" alt="Logo" width="570" height="300">
