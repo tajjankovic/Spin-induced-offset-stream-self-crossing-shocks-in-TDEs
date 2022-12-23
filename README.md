@@ -156,7 +156,7 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 
 ### Basic steps
 
-What does the program do:
+What does the code do:
 * By default it calculates $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$, saves the values to a .txt file and plots a Healpix map of $F$
 * Script outflow_parameters.py:
   * Script with paths (for output and input directories) and relevant parameters (for plotting and calculations)
@@ -169,7 +169,7 @@ What does the program do:
   * Change parameters theta_specific, phi_specific in the outflow_parameters.py file
      
 
-### Running the program
+### Running the code
 
 * E.g. from the command line for $\Delta=0.6$ and 1.2:
    ```sh
