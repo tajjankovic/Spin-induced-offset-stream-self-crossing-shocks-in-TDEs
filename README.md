@@ -99,7 +99,7 @@ induces an offset between these two colliding components that can affect the out
 of the black hole’s spin by locally simulating collisions between two streams, which are offset in the direction perpendicular
 to their orbital plane. 
 
-We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. More details are available in [healpy](https://arxiv.org/)
+We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. More details are available in [OUR PAPER](https://arxiv.org/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -231,7 +231,7 @@ Project Link: [https://github.com/tajjankovic/Spin-induced-offset-stream-self-cr
 
 
 <!-- ACKNOWLEDGMENTS -->
-## References
+<!-- ## References
 <a id="1">[1]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 
@@ -259,7 +259,7 @@ Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 <a id="9">[9]</a> 
 Bonnerot C., Lu W., 2020, Monthly Notices of the Royal Astronomical Society.
 
-
+ -->
 
 
 <!-- Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
