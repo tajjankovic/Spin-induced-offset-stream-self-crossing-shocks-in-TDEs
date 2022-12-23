@@ -1,4 +1,4 @@
-#  TDE DISCRO
+#  Outflow from the spin induced offset stream self-crossing shocks in TDEs
 
 <div id="top"></div>
 <!--
@@ -88,20 +88,17 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)  -->
 
-In recent years, there have been several studies related to numerical simulations of TDEs ([[1]](#1), [[2]](#2), [[3]](#3), [[4]](#4), [[5]](#5), [[6]](#6)). However, due to severe computational restrictions, a global simulation of an entire TDE process with typical disruption parameters (impact parameter $\beta \sim 1$, parabolic orbit, mass of the supermassive black hole $M_\mathrm{bh}\sim 10^6 M_\odot$), ranging from the pre-disruption phase to the formation of the accretion disk, is not feasible. This numerical issue arises during the second passage, when the bound debris returns in the proximity of the SMBH. For typical disruption parameters  the bound debris is on a wide range of elliptical orbits. In this case, the head of the tidal stream, composed of the most bound debris, is not resolved due to high numerical requirements ([[7]](#7)). Therefore, the initial stages of the second passage as well as the self-crossing are not accurately simulated as the necessary resolution is several orders of magnitude larger, than the resolution used in TDE simulations. We simulate stellar tidal disruption events with a new approach, similar as in ([[8]](#8), [[9]](#9)). The method is based on simulating conditions in the self-crossing region. In this way, the numerical issues are alleviated.
+<!--  In recent years, there have been several studies related to numerical simulations of TDEs ([[1]](#1), [[2]](#2), [[3]](#3), [[4]](#4), [[5]](#5), [[6]](#6)).  -->
+Tidal disruption events occur at the center of a galaxy when a star is disrupted in the supermassive black hole’s tidal field.
+Following the disruption, approximately half of the elongated stream of debris returns to the black hole’s vicinity. Due to
+relativistic apsidal precession, the part of the stream that passed pericenter collides with the still-infalling gas, leading to a
+self-crossing shock that triggers accretion disk formation. If the black hole spins, the additional Lense-Thirring precession
+induces an offset between these two colliding components that can affect the outcome of the interaction. We study this effect
+of the black hole’s spin by locally simulating collisions between two streams, which are offset in the direction perpendicular
+to their orbital plane. 
 
+We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated spherical projections of the normalized mass flux distributions in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. 
 
-DISCRO is based on we study the effect of SMBH's rotation by considering collisions between two streams that are offset in the direction perpendicular to the orbital plane of the debris. Simulations are based on a particle injection procedure close to the self-crossing region. We simulate the collision in a local frame moving with the tangential velocity of the collision outflow and validate our approach. 
-
-
-This code outputs the mass flux along the given direction by specifying dz, $\theta$ and $\phi$. 
-
-User should follow this simple steps:
-* Specify dz.
-* 
-* 
-
-The program will output a HEALPix map or ...
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
