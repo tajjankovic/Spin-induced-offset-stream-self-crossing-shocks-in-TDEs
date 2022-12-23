@@ -108,12 +108,6 @@ The program will output a HEALPix map or ...
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 
 
 ### Built With
@@ -133,7 +127,7 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
 
 1. Clone the repo
    ```sh
@@ -141,7 +135,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 2. Install Python packages
    
-* Instructions for installation on macOS Monterey 12:
+<!-- * Instructions for installation on macOS Monterey 12:-->
    ```sh
    pip3 install matplotlib, pandas, healpy
 
@@ -151,8 +145,8 @@ _Below is an example of how you can instruct your audience on installing and set
 
    pip3 install basemap #maybe not necessary
    ```
-* Instructions for installation on Ubuntu 20.04:
-* Instructions for installation on Windows 10:
+<!-- * Instructions for installation on Ubuntu 20.04:-->
+<!-- * Instructions for installation on Windows 10:-->
 
                 
 <p align="right">(<a href="#top">back to top</a>)</p>
