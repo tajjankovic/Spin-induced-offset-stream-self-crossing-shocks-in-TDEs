@@ -34,7 +34,7 @@
   <h3 align="center">Spin-induced offset stream self-crossing shocks in tidal disruption events</h3>
 
   <p align="center">
-    Inject particles in a self-crossing region like never before!
+    Calculate the outflow from the self-crossing region like never before!
     <br />
      <!-- <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>  -->
     <br />
