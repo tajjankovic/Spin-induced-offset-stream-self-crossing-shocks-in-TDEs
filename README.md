@@ -165,7 +165,8 @@ What does the program do:
 * Script outflow_plot.py:
   * Script for plotting the data: either a HEALPix map or a Matplotlib contour plot
 * User can specify arbitrary values of $\theta$ and $\phi$:
-  * Change parameters theta_array_1d and phi_array_1d in the outflow_parameters.py file
+  * Set specific_value = True in the outflow_parameters.py file
+  * Change parameters theta_specific, phi_specific in the outflow_parameters.py file
      
 
 ### Running the program
