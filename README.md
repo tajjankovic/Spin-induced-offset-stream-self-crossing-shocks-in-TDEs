@@ -43,7 +43,7 @@
     <br />
    <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>  -->
 
-[Report a bug or request a feature](https://github.com/tajjankovic/DISCRO/issues).
+[Report a bug](https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs/issues).
 
   
  <!--   <a href="issues">Request Feature</a>  -->
@@ -129,7 +129,7 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/tajjankovic/DISCRO.git
+   git clone https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs.git
    ```
 2. Install Python packages
    
@@ -224,7 +224,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Taj Jankovič - taj.jankovic@ung.si
 
-Project Link: [https://github.com/tajjankovic/DISCRO](https://github.com/tajjankovic/DISCRO)
+Project Link: [https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs](https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
