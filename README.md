@@ -127,7 +127,7 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 
 
 
-1. Clone the repo
+1. Clone the repo (or download .zip)
    ```sh
    git clone https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs.git
    ```
