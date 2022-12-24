@@ -173,7 +173,7 @@ What does the code do:
 
 * E.g. from the command line for $\Delta z=0.6$ and 1.2:
    ```sh
-   python3.8 outflow_final.py --dz_list 0.6 1.2
+   python3.8 outflow.py --dz_list 0.6 1.2
    ```
 
 
