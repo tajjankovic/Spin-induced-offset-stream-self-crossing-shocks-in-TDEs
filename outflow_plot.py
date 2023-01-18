@@ -144,7 +144,7 @@ def plot_contourf(dz,Zfit,x_list,y_list,plot_min, plot_max,lmax_smooth):
 
     'set colorbar ticks'
     cbar.ax.tick_params(labelsize=font_size)
-    locator_f = MaxNLocator(nbins=3)
+    locator_f = MaxNLocator(nbins=4)
     cbar.locator = locator_f
     cbar.update_ticks()
 
