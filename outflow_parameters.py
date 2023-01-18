@@ -36,8 +36,8 @@ show = True
 same_limits = False
 smooth = False
 make_symmetric = True
-plot_hp_map_bool = True
-plot_contourf_bool= False
+plot_hp_map_bool = False
+plot_contourf_bool= True
 specific_value = False
 
 ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
