@@ -121,10 +121,8 @@ We have simulated 19 stream collisions corresponding to values of the offset $\D
 
 
 
-1. Clone the repo (or download .zip)
-   ```sh
-   git clone https://github.com/tajjankovic/Spin-induced-offset-stream-self-crossing-shocks-in-TDEs.git
-   ```
+1. Download and extract the .zip of the repository
+ 
 2. Install Python packages
    
 <!-- * Instructions for installation on macOS Monterey 12:-->
