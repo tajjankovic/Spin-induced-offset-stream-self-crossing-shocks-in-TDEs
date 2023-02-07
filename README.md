@@ -91,15 +91,9 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com)  -->
 
 <!--  In recent years, there have been several studies related to numerical simulations of TDEs ([[1]](#1), [[2]](#2), [[3]](#3), [[4]](#4), [[5]](#5), [[6]](#6)).  -->
-Tidal disruption events occur at the center of a galaxy when a star is disrupted in the supermassive black hole’s tidal field.
-Following the disruption, approximately half of the elongated stream of debris returns to the black hole’s vicinity. Due to
-relativistic apsidal precession, the part of the stream that passed pericenter collides with the still-infalling gas, leading to a
-self-crossing shock that triggers accretion disk formation. If the black hole spins, the additional Lense-Thirring precession
-induces an offset between these two colliding components that can affect the outcome of the interaction. We study this effect
-of the black hole’s spin by locally simulating collisions between two streams, which are offset in the direction perpendicular
-to their orbital plane. 
+After a star is disrupted, the part of the elongated stream of debris that passed the pericenter collides with the still-infalling gas due to the relativistic apsidal precession, leading to a self-crossing shock. For rotating black holes the relativistic Lense-Thirring precession causes a misalignment between the colliding streams. We study the impact of the black hole's spin on the outflow from the self-crossing shock by locally simulating the collision between two streams with widths $H$ offset by a distance $\Delta z$.
 
-We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, where $H$ is the stream height, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code outputs the mass flux $F$ along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. More details are available in [OUR PAPER](https://arxiv.org/)
+We have simulated 21 stream collisions corresponding to values of the offset $\Delta z \in [0, 1.8H]$, with an increment of $0.1H$, and calculated the outflow rate in terms of the polar angle $\theta$ and azimuthal angle $\phi$. This code uses results from our simulations as an input and outputs the normalized mass flux $F$ (normalized by the total outflow rate) along the given direction by specifying $\Delta z$, $\theta$ and $\phi$. For values of $\Delta z$ that we have not simulated a stream collision, we implement linear interpolation. More details are available in [OUR PAPER](https://arxiv.org/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -135,13 +129,8 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
    
 <!-- * Instructions for installation on macOS Monterey 12:-->
    ```sh
-   pip3 install matplotlib, pandas, healpy
+   pip3 install matplotlib, pandas, healpy, pygeos, basemap
 
-   brew install geos #for Basemap plots
-
-   pip3 install pygeos
-
-   pip3 install basemap #maybe not necessary
    ```
 <!-- * Instructions for installation on Ubuntu 20.04:-->
 <!-- * Instructions for installation on Windows 10:-->
@@ -157,7 +146,7 @@ We have simulated 21 stream collisions corresponding to values of the offset $\D
 ### Basic steps
 
 What does the code do:
-* By default it calculates $F$ for $\theta \in [0,\pi]$ and $\phi \in [0,2\pi]$, saves the values to a .txt file and plots a Matplotlib contour of $F$
+* By default it calculates $F$ for $\theta \in [0,180^\circ]$ and $\phi \in [0,360^\circ]$, saves the values of $\theta$, $\phi$, $F$ to a .txt file and plots a Matplotlib contour of $F$
 * Script outflow_parameters.py:
   * Script with paths (for output and input directories) and relevant parameters (for plotting and calculations)
 * Script outflow.py:
