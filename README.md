@@ -64,11 +64,6 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-               <li><a href="#Built-with">Built With</a></li>
-      </ul>
-    </li>
     <li><a href="#usage">Usage</a></li>
       <ul>
          <li><a href="#basic-steps">Basic Steps</a></li>
