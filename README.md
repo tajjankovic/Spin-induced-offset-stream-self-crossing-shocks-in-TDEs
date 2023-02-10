@@ -59,14 +59,14 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-               <li><a href="#installation">Prerequisites</a></li>
-               <li><a href="#prerequisites">Installation</a></li>
+               <li><a href="#prerequisites">Prerequisites</a></li>
+               <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
       <ul>
          <li><a href="#basic-steps">Basic Steps</a></li>
-         <li><a href="#running-the-program">Running the code</a></li>
+         <li><a href="#running-the-code">Running the code</a></li>
       </ul>
     </li>
    <!-- <li><a href="#roadmap">Roadmap</a></li> -->
