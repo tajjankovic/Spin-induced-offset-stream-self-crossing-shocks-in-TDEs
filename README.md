@@ -63,7 +63,6 @@
                <li><a href="#prerequisites">Installation</a></li>
       </ul>
     </li>
-    <li>
     <li><a href="#usage">Usage</a></li>
       <ul>
          <li><a href="#basic-steps">Basic Steps</a></li>
