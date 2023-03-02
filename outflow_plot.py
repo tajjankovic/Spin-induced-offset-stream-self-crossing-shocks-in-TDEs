@@ -81,7 +81,7 @@ def plot_healpix_map(hpxmap,dz,plot_min,plot_max,lmax_smooth):
     plt.text(0.1, 0.644, '60' + r'$^\circ$', fontsize=font_size, transform=plt.gcf().transFigure)
     plt.text(0.190, 0.76, '30' + r'$^\circ$', fontsize=font_size, transform=plt.gcf().transFigure)
 
-    plt.title('HP map of data, ' + r'$\Delta z=$' + "{:.2f}".format(float(dz)), fontsize=font_size)
+    plt.title('HP map of data, ' + r'$\Delta z/H=$' + "{:.2f}".format(float(dz)), fontsize=font_size)
 
     'add new axes for colorbar and adjust as you wish'
     position = fig.add_axes([0.11, 0.1, 0.64,0.05])  ## the parameters are the specified position you set because cbar is not exactly in the center  [left, bottom, width, height]
@@ -179,7 +179,7 @@ def plot_contourf(dz,Zfit,x_list,y_list,plot_min, plot_max,lmax_smooth):
 
 
 
-    plt.title(r'$\Delta z=$' + "{:.2f}".format(float(dz)), fontsize=font_size)
+    plt.title(r'$\Delta z/H=$' + "{:.2f}".format(float(dz)), fontsize=font_size)
     cbar.set_label(r'${F}\,$', rotation=0, fontsize=font_size)
 
     'options for saving the figure'
